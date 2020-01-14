@@ -8,10 +8,20 @@ output: statsr:::statswithr_lab
 <div class="instructions">
 
 </div>
+## Getting Started
+
+If you have not ever used GitHub, you will first need to go in and create an account.
+Look at the guidlines on Jenny Bryant's Happy Git with R website: https://happygitwithr.com/github-acct.html
+
+Create your git account and make sure you write down your username and password.
+
+Now in github.com, search for the repository here: https://github.com/joan-combs-durso/SpringWorkshop
+and havd it ready. It's okay to go ahead and double click on the HTML file called intro-r.html and follow along.  
+
 
 ## Introduction
 
-Your 100 level StatSci course this semester will march you through a thorough introduction to using R for statistical science and data science purposes, as well as for many other practical applications.  You should already be familiar with the environment you are going to use for your course, whether it is RStudio in the Cloud, a Docker container, or software installed on your own computer. Your instructor should have given you that information and you should be ready to use it.  The materials here are a compilation of advice and instructions from your professors Curry Hilton, Victoria Ellison, Yue Jian, Shawn Santo, Bob Eisinger, and especially Maria Tackett, Mine Cetinkaya-Rundel, and TAs including Becky Tang and Jennifer Wilson, and many helpful resources.  
+Your 100 level StatSci course this semester will march you through a thorough introduction to using R for statistical science and data science purposes, as well as for many other practical applications.  You should already be familiar with the environment you are going to use for your course, whether it is RStudio in the Cloud, a Docker container, or software installed on your own computer. Your instructor should have given you that information and you should be ready to use it.  The materials here are a compilation of advice and instructions from your professors Curry Hilton, Victoria Ellison, Yue Jiang, Shawn Santo, Bob Eisinger, and especially Maria Tackett, Mine Cetinkaya-Rundel, and TAs including Becky Tang, Jennifer Wilson, Frances Hu, and many helpful resources.  
 
 Here are some key ideas:
 
@@ -88,7 +98,25 @@ She will be a keynote speaker at the RStudio Conference later this month, which 
 Meanwhile, here is her page of advice on creating a free Github account and choosing a user name that works.  https://happygitwithr.com/github-acct.html   Register your free account.  
 You'll have to confirm the request in email.  
 
-Now the workshop facilitators will help you clone the repository that contains the software you need. 
+Now the workshop facilitators will help you fork the repository that contains the software you need. 
+
+Configure git.  
+
+ou will use the use_git_config() function from the usethis package.
+
+Type the following lines of code in the console in RStudio filling in your name and email address.
+
+The email address is the one tied to your GitHub account.
+
+library(usethis)
+use_git_config(user.name = "GitHub username", user.email="your email")
+
+For example, Joan's  would be
+
+library(usethis)
+use_git_config(user.name="joan-combs-durso", user.email="joan.durso@duke.edu")
+
+Now your facilitators will help you get started with forking the package.
 
 ## Dataset Diamonds can be found in the ggplot2 package!
 We are going to use a dataset called 'diamonds'. 
@@ -452,7 +480,10 @@ If you run into problems with your RStudio work, start by inspecting the console
 
 If you need help with a problem in your labs, please ask your TA or your classmates.  Don't be the person who posts a question to a website like Stack Overflow for which the answers can be readily found on the internet via a simple search. Those kinds of questions will be ignored or will result in heaps of abuse. Some sites are more beginner-friendly than others.  Your TAs will have some suggestions for you.  
 
-Whatever you do, please don't post your assigned questions onto paid answer-sharing services. That's a violation of the Community Standard as well as a very poor way to learn to use R.    
+Whatever you do, please don't post your assigned questions onto paid answer-sharing services. That's a violation of the Community Standard as well as a very poor way to learn to use R.  
+
+Acknowledgements:
+This is derived from an Open INtro 
 
 <div id="license">
 This is a derivative of an [OpenIntro](https://www.openintro.org/stat/labs.php) lab, and is released under a [Attribution-NonCommercial-ShareAlike 3.0 United States](https://creativecommons.org/licenses/by-nc-sa/3.0/us/) license.

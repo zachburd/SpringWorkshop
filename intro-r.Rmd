@@ -52,6 +52,7 @@ and many others in the future, we will use the following R packages:
 - `statsr`: for data files and functions used in this course
 - `dplyr`: for data wrangling
 - `ggplot2`: for data visualization
+- `usethis': for workflow automation (and eventually, to help write your own packages!)
 
 You should have already installed these packages using commands like 
 `install.packages` and `install_github'. These packages are part of a modern version of R known collectively as the Tidyverse. Find out more here: https://rviews.rstudio.com/2017/06/08/what-is-the-tidyverse/ 
@@ -64,6 +65,7 @@ you need to **load** them each time you relaunch RStudio.
 library(dplyr)
 library(ggplot2)
 library(statsr)
+library(usethis)
 ```
 
 To do so, you can 
@@ -393,8 +395,8 @@ of either `TRUE` if that stone was longer than its width, or `FALSE` if it was n
 
 
 This variable contains different kind of 
-data than we have considered so far. All other columns in the `arbuthnot` data 
-frame have values are numerical (the year, the number of boys and girls). Here, 
+data than we have considered so far. All other columns in the `diamonds` data 
+frame have values that are numerical (carat, table and width) or text (color, cut). Here, 
 we've asked R to create *logical* data, data where the values are either `TRUE` 
 or `FALSE`. In general, data analysis will involve many different kinds of data 
 types, and one reason for using R is that it is able to represent and compute 

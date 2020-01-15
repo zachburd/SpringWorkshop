@@ -102,7 +102,7 @@ Now the workshop facilitators will help you fork the repository that contains th
 
 Configure git.  
 
-ou will use the use_git_config() function from the usethis package.
+You will use the use_git_config() function from the usethis package.
 
 Type the following lines of code in the console in RStudio filling in your name and email address.
 
@@ -276,7 +276,7 @@ Before we review the code for this plot, let's summarize the trends we see in th
 data.
 
 <div class="question">
-Which of the following best describes the number of girls baptised over the years included in this dataset? 
+Which of the following best describes the relationship between price and diamond weight on stones included in this dataset? 
 
 * There are so many dots it is hard to see a trend!
 * Price and diamond weight in carats are positively related.
@@ -302,7 +302,7 @@ does and learn the arguments that are available to you, just type in a question 
 followed by the name of the function that you're interested in. Try the following in
 your console:
 
-```{r plot-help, tidy = FALSE}
+```{r plot-help, tidy = TRUE}
 ?ggplot
 ```
 
@@ -376,7 +376,7 @@ that data set with the new mutated column.
 
 We can make a plot comparing diamond table by total dimensions with the following command.
 
-```{r plot-total-vs-year-line}
+```{r plot-total-vs-table-line}
 ggplot(data = diamonds, aes(x = table, y = total)) +
   geom_line()
 ```
@@ -384,7 +384,7 @@ ggplot(data = diamonds, aes(x = table, y = total)) +
 Note that using `geom_line()` instead of `geom_point()` results in a line plot instead
 of a scatter plot. You want both? Just layer them on:
 
-```{r plot-total-vs-year-line-and-point}
+```{r plot-total-vs-table-line-and-point}
 ggplot(data = diamonds, aes(x = table, y = total)) +
   geom_line() +
   geom_point()
@@ -483,7 +483,7 @@ If you need help with a problem in your labs, please ask your TA or your classma
 Whatever you do, please don't post your assigned questions onto paid answer-sharing services. That's a violation of the Community Standard as well as a very poor way to learn to use R.  
 
 Acknowledgements:
-This is derived from an Open INtro 
+This is derived from anm  Statistics with R lab derived from an Open Intro Statistics lab.
 
 <div id="license">
 This is a derivative of an [OpenIntro](https://www.openintro.org/stat/labs.php) lab, and is released under a [Attribution-NonCommercial-ShareAlike 3.0 United States](https://creativecommons.org/licenses/by-nc-sa/3.0/us/) license.

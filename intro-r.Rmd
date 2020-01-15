@@ -62,10 +62,18 @@ and many others in the future, we will use the following R packages:
 - `statsr`: for data files and functions used in this course
 - `dplyr`: for data wrangling
 - `ggplot2`: for data visualization
-- `usethis': for workflow automation (and eventually, to help write your own packages!)
+- `usethis`: for workflow automation (and eventually, to help write your own packages!)
 
 You should have already installed these packages using commands like 
-`install.packages` and `install_github'. These packages are part of a modern version of R known collectively as the Tidyverse. Find out more here: https://rviews.rstudio.com/2017/06/08/what-is-the-tidyverse/ 
+`install.packages` and `install_github'. These packages are part of a modern version of R known collectively as the Tidyverse. Find out more here: https://rviews.rstudio.com/2017/06/08/what-is-the-tidyverse/  When you open this Rmd file in R Studio, it may prompt you to install these packages, with a yellow warning at the top of the screen. Click 'Install' if it asks you.  Alternatively, simply uncomment whichever you need and run this code chunk to install them.
+
+```{r install-packages, message = FALSE}
+
+#library(dplyr)
+#library(ggplot2)
+#library(statsr)
+#library(usethis)
+```
 
 Next, you need to load the packages in your working environment. We do this with
 the `library` function. Note that you only need to **install** packages once, but
@@ -107,10 +115,10 @@ You will use the use_git_config() function from the usethis package.
 Type the following lines of code in the console in RStudio filling in your name and email address.
 
 The email address is the one tied to your GitHub account.
-
+```{r get your github congfigured}
 library(usethis)
 use_git_config(user.name = "GitHub username", user.email="your email")
-
+```
 For example, Joan's  would be
 
 library(usethis)
@@ -471,8 +479,8 @@ You can attend as much of the RStudio Conference that you want, by joining our R
 of the code on these cheatsheets may be too advanced for your needs now, however the
 majority of it will become useful as you progress through your statistical science courses.
     - [Data wrangling cheatsheet](http://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf)
-    - [Data visualization cheatsheet](http://www.rstudio.com/wp-content/uploads/2015/12/ggplot2-cheatsheet-2.0.pdf)
-    - [R Markdown](http://www.rstudio.com/wp-content/uploads/2016/03/rmarkdown-cheatsheet-2.0.pdf)
+    - [Data visualization cheatsheet](https://github.com/rstudio/cheatsheets/raw/master/data-visualization-2.1.pdf)
+    - [R Markdown](https://github.com/rstudio/cheatsheets/raw/master/rmarkdown-2.0.pdf)
 
 ## Troubleshooting
 
@@ -483,7 +491,7 @@ If you need help with a problem in your labs, please ask your TA or your classma
 Whatever you do, please don't post your assigned questions onto paid answer-sharing services. That's a violation of the Community Standard as well as a very poor way to learn to use R.  
 
 Acknowledgements:
-This is derived from anm  Statistics with R lab derived from an Open Intro Statistics lab.
+This is derived from a Statistics with R lab derived from an Open Intro Statistics lab. Thanks to Mine Cetinkaya-Rundel and Maria Tackett for all their help.
 
 <div id="license">
 This is a derivative of an [OpenIntro](https://www.openintro.org/stat/labs.php) lab, and is released under a [Attribution-NonCommercial-ShareAlike 3.0 United States](https://creativecommons.org/licenses/by-nc-sa/3.0/us/) license.

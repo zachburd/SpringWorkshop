@@ -1,8 +1,8 @@
+
 ---
-author: " Your Name"
-date: "Today's Date"
+
 title: "Introduction for students new to R and RStudio"
-output: github_document
+output: statsr:::statswithr_lab
 ---
 
 <div class="instructions">
